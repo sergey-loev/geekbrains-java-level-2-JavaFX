@@ -1,8 +1,19 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #8a9480;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <TextField fx:id="mainTextField" layoutX="10.0" layoutY="325.0" onKeyPressed="#handleTextFieldAction" prefHeight="30.0" prefWidth="281.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+    <TextArea fx:id="mainTextArea" editable="false" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+    <Button fx:id="sendBtn" layoutX="196.0" layoutY="356.0" mnemonicParsing="false" onAction="#sendBtnClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" opacity="0.75" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #ffaa00;" text="Отправить" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+        <effect>
+            <DropShadow />
+        </effect>
+    </Button>
+</AnchorPane>
